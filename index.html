@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB Clone</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body class="bg-black">
+    <!-- Navbar -->
+    <nav class="z-10 fixed top-0 w-full">
+      <div
+        class="flex flex-1 bg-gray-800 justify-between items-center px-4 py-1"
+      >
+        <div>
+          <img
+            src="./assets/icons8-imdb-50.png"
+            alt="logo"
+            class="invert cursor-pointer"
+            id="vertical"
+          />
+          <img
+            src="./assets/icons8-imdb-50 (1).png"
+            alt="logo"
+            class="hidden invert cursor-pointer"
+            id="horizontal"
+          />
+        </div>
+        <div>
+          <label for="search" class="text-[18px] font-semibold text-white">
+            Search :
+          </label>
+          <input
+            id="search-text"
+            type="text"
+            placeholder="Search For Movies"
+            class="outline-none border border-blue-500 h-10 w-[300px] rounded-lg px-2 py-0 font-sans focus:ring-0"
+          />
+        </div>
+        <div
+          class="flex justify-around items-center outline-none p-1 rounded-md bg-red-400"
+        >
+          <img src="./assets/bk.png" alt="bk" class="h-[20px] mr-1" />
+          <a
+            class="text-[20px] text-gray-900 font-sans font-semibold cursor-pointer hover:text-red-100"
+            href="./watchlist/watchlist.html"
+          >
+            Watchlist
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu -->
+    <section class="relative top-16 -z-0">
+      <div
+        class="bg-[#1F1F1F] hidden relative -top-[50%] w-full animate-upDown"
+        id="menu"
+      >
+        <ul
+          class="flex justify-around py-4 text-white text-1xl font-normal font-mono"
+        >
+          <li
+            class="cursor-pointer hover:bg-blue-300 hover:text-black hover:rounded-lg border p-2 transition-all ease-linear duration-300"
+          >
+            Movies
+          </li>
+          <li
+            class="cursor-pointer hover:bg-blue-300 hover:text-black hover:rounded-lg border p-2 transition-all ease-linear duration-300"
+          >
+            TV Shows
+          </li>
+          <li
+            class="cursor-pointer hover:bg-blue-300 hover:text-black hover:rounded-lg border p-2 transition-all ease-linear duration-300"
+          >
+            Awards & Events
+          </li>
+          <li
+            class="cursor-pointer hover:bg-blue-300 hover:text-black hover:rounded-lg border p-2 transition-all ease-linear duration-300"
+          >
+            Watch
+          </li>
+          <li
+            class="cursor-pointer hover:bg-blue-300 hover:text-black hover:rounded-lg border p-2 transition-all ease-linear duration-300"
+          >
+            Community
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Movies Section -->
+    <main id="movies-container" class="relative top-[5rem]">
+      <ul
+        id="movies-section"
+        class="flex flex-wrap justify-center p-10 gap-10 overflow-hidden"
+      ></ul>
+    </main>
+
+    <!-- more -->
+    <div class="relative mt-16 mb-2 text-center">
+      <button type="button" class="text-white border p-1 bg-gray-800" id="more">
+        More
+      </button>
+    </div>
+  </body>
+</html>

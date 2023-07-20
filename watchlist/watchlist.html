@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/watchlist.css" />
+    <title>Watchlist</title>
+    <script src="./watchlist.js" defer></script>
+  </head>
+  <body class="bg-black">
+    <section class="bg-black">
+      <div class="relative">
+        <a
+          href="/index.html"
+          class="text-white border border-red-700 p-1 rounded-md bg-red-600 absolute left-5 top-5"
+          >&LeftArrow;Back</a
+        >
+      </div>
+
+      <div>
+        <h1 class="text-white text-3xl text-center mt-5">Watchlist Movies</h1>
+      </div>
+
+      <div id="watchlistmovies-container" class="mx-auto">
+        <h1
+          id="heading-info"
+          class="text-3xl mt-10 text-white text-center hidden"
+        >
+          No movies is present to watch later
+        </h1>
+        <ul
+          id="watchlistmovies"
+          class="p-8 flex flex-wrap gap-4 justify-center"
+        ></ul>
+      </div>
+    </section>
+  </body>
+</html>
