@@ -18,7 +18,7 @@ if (watchListData === null) {
     const removeEle = document.createElement("button");
 
     const data = await fetch(
-      `http://www.omdbapi.com/?i=${watchlist}&apikey=69346ae`
+      `https://www.omdbapi.com/?i=${watchlist}&apikey=69346ae`
     )
       .then((data) => data.json())
       .catch((err) => console.log(err));
@@ -48,7 +48,7 @@ if (watchListData === null) {
 
     imgEle.addEventListener("click", (e) => {
       console.log(e.target);
-      window.location = `http://127.0.0.1:5500/moviepage/page.html?id=${imgEle.dataset.id}`;
+      window.location = `https://64c217dc1e18e8575cb34a91--statuesque-puppy-cd9c8f.netlify.app/moviepage/page.html?id=${imgEle.dataset.id}`;
     });
 
     //   adding styles into removeEle
@@ -114,5 +114,5 @@ function removeElementFromWatchList(e) {
     console.log(newIds);
   }
   window.alert("Removed from watchlist");
-  window.location = "http://127.0.0.1:5500/watchlist/watchlist.html";
+  window.location = "https://64c217dc1e18e8575cb34a91--statuesque-puppy-cd9c8f.netlify.app/watchlist/watchlist.html";
 }
