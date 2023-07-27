@@ -119,7 +119,7 @@ async function fetchMovies(searchText) {
           }
         }
 
-        window.location = `https://64c240d9d36fab6eb3dbc8d6--statuesque-puppy-cd9c8f.netlify.app/index.html`;
+        window.location = `https:imdb-project-clone.netlify/index.html`;
       });
 
       divContainer.appendChild(watchlistEle);
@@ -164,7 +164,7 @@ async function fetchMovies(searchText) {
       // addeventlistener on imgEle to open it in new page
       imgEle.addEventListener("click", (e) => {
         console.log(e.target);
-        window.location = `https://64c217dc1e18e8575cb34a91--statuesque-puppy-cd9c8f.netlify.app/moviepage/page.html?id=${imgEle.dataset.id}`;
+        window.location = `imdb-project-clone.netlify/moviepage/page.html?id=${imgEle.dataset.id}`;
       });
     });
   }
