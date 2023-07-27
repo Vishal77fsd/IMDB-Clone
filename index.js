@@ -59,6 +59,7 @@ async function fetchMovies(searchText) {
     }&page=${page}&apikey=69346ae`
   );
 
+  // parsing the response in json
   const movies = await response.json();
   // console.log(movies.totalResults);
 
@@ -171,7 +172,7 @@ async function fetchMovies(searchText) {
 
 // handling click on more
 more.addEventListener("click", () => {
-  if (page < 5) {
+  if (page < 10) {
     page++;
     fetchMovies();
   }

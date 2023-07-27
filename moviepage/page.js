@@ -17,6 +17,7 @@ async function getDetails() {
 
   console.log(id);
   if (id) {
+    // api call
     const response = await fetch(
       `http://www.omdbapi.com/?i=${id}&apikey=69346ae`
     )
@@ -59,6 +60,7 @@ async function getDetails() {
 
 getDetails();
 
+// return the id
 function getID() {
   let string = window.location.href;
   let strLen = string.length;

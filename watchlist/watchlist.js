@@ -50,6 +50,7 @@ if (watchListData === null) {
       console.log(e.target);
       window.location = `http://127.0.0.1:5500/moviepage/page.html?id=${imgEle.dataset.id}`;
     });
+
     //   adding styles into removeEle
     removeEle.classList.add(
       "border",
