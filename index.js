@@ -119,7 +119,7 @@ async function fetchMovies(searchText) {
           }
         }
 
-        window.location = `http://127.0.0.1:5500/index.html`;
+        window.location = `https://64c22803af01d4608e07daff--statuesque-puppy-cd9c8f.netlify.app/index.html`;
       });
 
       divContainer.appendChild(watchlistEle);
