@@ -48,7 +48,7 @@ if (watchListData === null) {
 
     imgEle.addEventListener("click", (e) => {
       console.log(e.target);
-      window.location = `https://64c217dc1e18e8575cb34a91--statuesque-puppy-cd9c8f.netlify.app/moviepage/page.html?id=${imgEle.dataset.id}`;
+      window.location = `https://imdb-project-clone.netlify.app/moviepage/page.html?id=${imgEle.dataset.id}`;
     });
 
     //   adding styles into removeEle
@@ -114,5 +114,5 @@ function removeElementFromWatchList(e) {
     console.log(newIds);
   }
   window.alert("Removed from watchlist");
-  window.location = "https://64c217dc1e18e8575cb34a91--statuesque-puppy-cd9c8f.netlify.app/watchlist/watchlist.html";
+  window.location = "https://imdb-project-clone.netlify.app/watchlist/watchlist.html";
 }
