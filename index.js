@@ -72,7 +72,7 @@ async function fetchMovies(searchText) {
 
       // check for watchlist
       let watchLists = JSON.parse(localStorage.getItem("movieslist"));
-      let isWatchList = watchLists.includes(movieId);
+      let isWatchList = watchLists?.includes(movieId);
       //   Creating ele for ul
       const ele = document.createElement("li");
       const imgEle = document.createElement("img");
