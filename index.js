@@ -119,7 +119,7 @@ async function fetchMovies(searchText) {
           }
         }
 
-        window.location = `https://64c22803af01d4608e07daff--statuesque-puppy-cd9c8f.netlify.app/index.html`;
+        window.location = `https://64c240d9d36fab6eb3dbc8d6--statuesque-puppy-cd9c8f.netlify.app/index.html`;
       });
 
       divContainer.appendChild(watchlistEle);
