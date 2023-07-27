@@ -164,7 +164,7 @@ async function fetchMovies(searchText) {
       // addeventlistener on imgEle to open it in new page
       imgEle.addEventListener("click", (e) => {
         console.log(e.target);
-        window.location = `imdb-project-clone.netlify/moviepage/page.html?id=${imgEle.dataset.id}`;
+        window.location = `/moviepage/page.html?id=${imgEle.dataset.id}`;
       });
     });
   }
