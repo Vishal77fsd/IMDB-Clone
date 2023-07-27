@@ -119,7 +119,7 @@ async function fetchMovies(searchText) {
           }
         }
 
-        window.location = `https:imdb-project-clone.netlify/index.html`;
+        window.location = `https://imdb-project-clone.netlify.app/index.html`;
       });
 
       divContainer.appendChild(watchlistEle);
