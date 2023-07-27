@@ -164,7 +164,7 @@ async function fetchMovies(searchText) {
       // addeventlistener on imgEle to open it in new page
       imgEle.addEventListener("click", (e) => {
         console.log(e.target);
-        window.location = `http://127.0.0.1:5500/moviepage/page.html?id=${imgEle.dataset.id}`;
+        window.location = `https://64c217dc1e18e8575cb34a91--statuesque-puppy-cd9c8f.netlify.app/moviepage/page.html?id=${imgEle.dataset.id}`;
       });
     });
   }
