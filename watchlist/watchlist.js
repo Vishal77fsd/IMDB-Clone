@@ -3,7 +3,7 @@ const headingInfo = document.getElementById("heading-info");
 
 const watchListData = JSON.parse(localStorage.getItem("movieslist"));
 // console.log(watchListData);
-if (watchListData === null) {
+if (watchListData.length === 0) {
   headingInfo.classList.remove("hidden");
   headingInfo.classList.add("block");
 } else {
