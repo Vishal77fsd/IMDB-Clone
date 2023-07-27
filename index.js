@@ -54,7 +54,7 @@ let page = 1;
 async function fetchMovies(searchText) {
   // console.log(searchText ? searchText : "batman");
   const response = await fetch(
-    `http://www.omdbapi.com/?s=${
+    `https://www.omdbapi.com/?s=${
       searchText ? searchText : "random"
     }&page=${page}&apikey=69346ae`
   );
