@@ -20,9 +20,7 @@ async function getDetails() {
     // api call
     const response = await fetch(
       `https://www.omdbapi.com/?i=${id}&apikey=69346ae`
-    )
-      .then((data) => data.json())
-      .catch((err) => console.log(err));
+    ).then((data) => data.json()).catch((err) => console.log(err));
 
     // console.log(response);
 
