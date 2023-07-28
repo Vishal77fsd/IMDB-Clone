@@ -3,9 +3,11 @@ const horizontalLogo = document.getElementById("horizontal");
 const menu = document.getElementById("menu");
 const moviesSection = document.getElementById("movies-section");
 const more = document.getElementById("more");
-
-let isMenuOpen = false;
 let searchInput = document.getElementById("search-text");
+
+// variable
+let isMenuOpen = false;
+let totalResults = 0;
 
 // is menu open or not
 verticalLogo.addEventListener("click", () => {
@@ -66,6 +68,8 @@ async function fetchMovies(searchText) {
   let data = movies.Search;
 
   if (data) {
+
+    totalResults = movies?.totalResults;
     data.map((movie) => {
       //   console.log(movie);
       const movieId = movie.imdbID;
@@ -172,7 +176,7 @@ async function fetchMovies(searchText) {
 
 // handling click on more
 more.addEventListener("click", () => {
-  if (page < 10) {
+  if (page < totalResults) {
     page++;
     fetchMovies();
   }
